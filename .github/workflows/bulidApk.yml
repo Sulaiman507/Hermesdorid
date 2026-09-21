@@ -24,28 +24,12 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Show environment
+      - name: Accept Android SDK licenses
         run: |
-          echo "Java version:"
-          java -version
-          echo ""
-          echo "Flutter version:"
-          flutter --version
-          echo ""
-          echo "Flutter doctor:"
-          flutter doctor
+          yes | sdkmanager --licenses 2>/dev/null || true
 
       - name: Get dependencies
         run: flutter pub get
-
-      - name: Pre-cache Android artifacts
-        run: flutter precache --android
-
-      - name: Build APK (debug first to catch errors early)
-        run: flutter build apk --debug
 
       - name: Build APK (release)
         run: flutter build apk --release
