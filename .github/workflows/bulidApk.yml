@@ -24,6 +24,9 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: Create Android platform files
+        run: flutter create --platforms=android .
+
       - name: Accept Android SDK licenses
         run: |
           yes | sdkmanager --licenses 2>/dev/null || true
