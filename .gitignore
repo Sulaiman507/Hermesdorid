@@ -1,0 +1,64 @@
+# Miscellaneous
+*.class
+*.pyc
+*.so
+*.dylib
+
+# Gradle
+.gradle/
+build/
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# Android
+android/.gradle/
+android/local.properties
+android/key.properties
+
+# iOS
+ios/Flutter/Flutter.podcache/
+ios/Pods/
+ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+macos/Flutter/Flutter.podcache/
+macos/Pods/
+
+# Windows
+build/
+
+# Linux
+build/
+
+# Emacs
+*~
+\#*\#
+.\#*
+*.log
+
+# Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# Flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Misc
+*.log
+*.tmp
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
